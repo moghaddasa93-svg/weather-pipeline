@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Weather Pipeline</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Weather Pipeline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: #fafafa;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #f0f0f0;
+        }
+        pre {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 16px;
+            white-space: pre-wrap;
+            font-family: inherit;
+        }
+        .note {
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Weather Pipeline</h1>
-  <p>This page will be updated automatically.</p>
+    <h1>Automated Weather Pipeline</h1>
+    <p class="note">This page is updated automatically by GitHub Actions.</p>
+
+    <h2>Weather Poem</h2>
+    <pre>English Version:
+Tomorrow's skies, a tale unfold,
+In Aalborg, chilly winds do hold,
+9.4 degrees, a crisp delight,
+No rain in sight, a clear morning light.
+
+Copenhagen's warmth, a gentle breeze,
+11.8 degrees, a softer tease,
+While Tehran's sun, a balmy treat,
+18.7 degrees, with rain to greet.
+
+Where would I rather be, I ask,
+Tehran's warmth, my heart does task,
+For though it rains, the sun shines bright,
+Tehran's charm, my soul takes flight.
+
+Persian Version:
+فردا آسمان ها، داستانی را بازگو می کنند،
+در آلبورگ، بادهای سردی را در بر دارد،
+9.4 درجه، یک صبح روشن و روشن，
+هیچ بارانی در نظر نیست، نور صبحگاهی روشن.
+
+温暖 کوپنهاگ، یک باد ملایم،
+11.8 درجه، یک طناب نرم،
+در حالی که آفتاب تهران، یک وعده گرمایی است،
+18.7 درجه، با باران به استقبال.
+
+کجای دنیا میخواهم باشم، از خود میپرسم،
+گرمای تهران، قلب من را به کار می اندازد،
+چون اگر باران ببارد، آفتاب به درخشش می آید،
+جاذبه تهران، روح من را به پرواز در میآورد.</pre>
+
+    <h2>Tomorrow's Forecast</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Location</th>
+                <th>Role</th>
+                <th>Date</th>
+                <th>Max Temperature</th>
+                <th>Precipitation</th>
+                <th>Wind Speed</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr>
+            <td>Aalborg</td>
+            <td>Current city</td>
+            <td>2026-03-23</td>
+            <td>9.4 °C</td>
+            <td>0.0 mm</td>
+            <td>20.5 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Copenhagen</td>
+            <td>Comparison city</td>
+            <td>2026-03-23</td>
+            <td>11.8 °C</td>
+            <td>0.0 mm</td>
+            <td>13.7 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Tehran</td>
+            <td>Birthplace / Previous residence</td>
+            <td>2026-03-23</td>
+            <td>18.7 °C</td>
+            <td>0.4 mm</td>
+            <td>8.4 km/h</td>
+        </tr>
+        
+        </tbody>
+    </table>
 </body>
 </html>
